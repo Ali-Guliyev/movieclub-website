@@ -178,6 +178,7 @@ main {
   flex-direction: column;
   cursor: pointer;
   color: black;
+  margin-bottom: 20px;
 }
 
 .movieCard * {
