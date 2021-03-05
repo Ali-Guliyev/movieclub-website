@@ -141,6 +141,28 @@ main {
 }
 
 /* Form */
+.main__form {
+  display: flex;
+  justify-content: center;
+}
+
+.main__form button {
+  margin: 20px 0;
+  padding: 5px 10px;
+  background-color: #f9f9f9;
+  color: #797979;
+  transition: all 0.2s ease;
+  box-shadow: 0 3px 4px rgba(0, 0, 0, 0.1);
+  border: none;
+  outline: none;
+  border-radius: 21px;
+
+  font-size: 30px;
+  cursor: pointer;
+  margin-left: 10px;
+  width: 60px;
+}
+
 .main__searchInput {
   font-family: "Monda", sans-serif;
   outline: none;
@@ -156,7 +178,8 @@ main {
   box-shadow: 0 3px 4px rgba(0, 0, 0, 0.1);
 }
 
-.main__searchInput:focus {
+.main__searchInput:focus,
+.main__form button:hover {
   box-shadow: 0 4px 5px rgba(17, 11, 11, 0.2);
   background-color: #f9f9f9c7;
 }

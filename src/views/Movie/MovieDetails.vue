@@ -33,14 +33,16 @@
           <br />
         </div>
 
-        <h2>Actors</h2>
-        <p>{{ movie.Actors }}</p>
-        <br />
+        <div v-if="movie.Actors != 'N/A'">
+          <h2>Actors</h2>
+          <p>{{ movie.Actors }}</p>
+          <br />
+        </div>
 
         <h2>Cast</h2>
         <p>{{ movie.Country }}</p>
 
-                <span @click="$router.go(-1)" class="material-icons">
+        <span @click="$router.go(-1)" class="material-icons">
           west
         </span>
       </div>

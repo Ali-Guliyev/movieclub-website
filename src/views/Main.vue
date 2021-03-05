@@ -8,6 +8,9 @@
         type="text"
         placeholder="Search a movie"
       />
+      <button type="submit" class="material-icons">
+        search
+      </button>
     </form>
 
     <MovieList :movies="movies" />
